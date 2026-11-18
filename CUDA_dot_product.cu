@@ -65,7 +65,7 @@ int main() {
 		(d_a, d_b, d_result, n);
 
 	cudaMemcpy(&h_result, d_result, sizeof(float), cudaMemcpyDeviceToHost);
-	printf("Dot product: %f", h_result);
+	printf("Dot product: %f\n", h_result);
 
 	cudaFree(d_a);
 	cudaFree(d_b);
